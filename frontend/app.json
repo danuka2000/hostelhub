@@ -21,7 +21,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1E1B4B"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "plugins": [
       [
@@ -30,6 +33,11 @@
           "photosPermission": "HostelHub needs access to your photos to upload room images."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2ed37be0-b57c-469c-aee4-7126bd417209"
+      }
+    }
   }
 }
