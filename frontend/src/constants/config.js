@@ -1,9 +1,8 @@
 import { Platform } from 'react-native';
 
-const LOCAL_IP = '192.168.1.100';
+const VERCEL_BACKEND_URL = 'https://backend-seven-nu-36.vercel.app/api';
 
-export const API_URL = process.env.EXPO_PUBLIC_API_URL 
-  || (Platform.OS === 'web' ? 'http://localhost:5000/api' : `http://${LOCAL_IP}:5000/api`);
+export const API_URL = process.env.EXPO_PUBLIC_API_URL || VERCEL_BACKEND_URL;
 export const STORAGE_KEYS = {
   TOKEN: '@hostelhub_token',
   USER: '@hostelhub_user'
